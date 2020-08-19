@@ -1,0 +1,111 @@
+body	{
+			color: #333333;
+			font-family: "Lucida	Sans	Unicode",	"Lucida	Grande",	sans-serif;
+            margin-left:	auto;
+            margin-right:	auto;
+            width: 940px;
+
+	}
+
+h1	{
+					background-image:	url(../img/sobre-background.jpg); /* não esquecer de colocar os pontos no início */
+    				padding: 10px;
+	}
+
+h2	{
+					border-bottom: 2px	solid	#333333;
+    				margin-top: 30px;
+
+	}
+
+figure	{
+			background-color: #F2EDED;
+			border: 1px	solid	#ccc;
+			text-align:	center;
+            padding: 15px;
+            margin: 30px;
+
+	   }
+
+figcaption	{
+        font-style:	italic;
+        margin-top: 10px;
+            }
+
+p	{
+        padding: 0 45px;
+	    text-indent: 15px;
+	}
+
+#centro-distribuicao	{
+			margin-left:	auto;
+			margin-right:	auto;
+			width: 550px;
+	}
+
+#rodape	{
+					color: #777;
+					margin: 30px 0;
+					padding: 30px 0;
+	    }
+
+#rodape img	{
+					margin-right: 30px;
+					vertical-align:	middle;
+					width: 94px;
+	       }
+
+#familia-pelho	{
+				    float:	right;
+				    margin: 0 0 10px 10px;
+				}
+
+.social a	{
+			/*	tamanho	da	imagem	*/
+			height: 32px;
+			width: 32px;
+			/*	image	replacement	*/
+			display:	block;
+			text-indent:	-9999px;		
+	}
+.social a[href*="facebook.com"]	{
+			background-image:	url(../img/facebook.png);
+	}
+.social a[href*="twitter.com"]	{
+			background-image:	url(../img/twitter.png);
+	}
+.social a[href*="plus.google.com"]	{
+			background-image:	url(../img/googleplus.png);
+	}
+footer	{
+            clear:	both !important;
+            background-image:	url(../img/fundo-rodape.png);
+	}
+footer .container	{
+			position:	relative !important;
+            padding: 20px 0;
+	}
+.social	{
+			position:	absolute;
+			top: 12px;
+			right: 0;
+	}
+.social li	{
+			float:	left;
+			margin-left: 25px;
+	}
+
+	p::first-letter	{ /* seleciona a primeira letra de todos os paragrafos */
+					font-weight:	bold;
+			}
+	h1	+	p	{ /* seleciona o primeiro p que ver depois do h1 */
+					text-indent: 0;
+			}
+
+/* seleciona a primeira linha de cada parágrafo p::first-line*/
+	:not(p)	+	p::first-line	{ /*	seleciona	 as	 primeiras	 linhas	 dos	 parágrafos	 que	 não	 são	 precedidos	 por	 outros
+parágrafos.*/
+
+					font-variant:	small-caps;
+			}
+
